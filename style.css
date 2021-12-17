@@ -81,6 +81,12 @@ main p {
   background-position: center;
 }
 
+@media (max-width: 965px) {
+  .hero {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 880px) {
   main {
     grid-template-columns: 1fr;
@@ -88,5 +94,6 @@ main p {
 
   .hero {
     height: 30vh;
+    background-size: contain;
   }
 }
