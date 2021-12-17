@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: linear-gradient(
+    121.7deg,
+    rgb(41, 116, 250) 22.9%,
+    rgb(67, 212, 255) 69%
+  );
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+header h1 {
+  font-size: 38px;
+  padding: 0px 10px;
+}
+
+header p {
+  margin-top: 5px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 50px;
+}
+
+main p {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quotes1,
+.quotes2,
+.quotes3 {
+  border: 2px solid rgb(202, 193, 193);
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.quotes1 {
+  background: rgb(220, 20, 60, 0.6);
+  color: #fff;
+}
+
+.quotes2 {
+  background: rgb(247, 231, 17, 0.7);
+}
+.quotes3 {
+  background: rgba(17, 16, 1, 0.7);
+  color: #fff;
+}
+
+.hero {
+  background-image: url('https://blog.cwf-fcf.org/wp-content/uploads/2017/03/Loren-Eiseley-1100x619.jpg');
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-width: 880px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 30vh;
+  }
+}
