@@ -81,15 +81,15 @@ main p {
   background-position: center;
 }
 
-@media (max-width: 965px) {
-  .hero {
-    background-size: cover;
-  }
-}
-
 @media (max-width: 880px) {
   main {
     grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 700px) {
+    .hero {
+      background-size: cover;
+    }
   }
 
   .hero {
